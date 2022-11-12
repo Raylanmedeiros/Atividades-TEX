@@ -12,11 +12,6 @@ p {
 
 }
 
-@media only screen and (max-width: 720px) {
-    img {
-        width: 100%;
-    }
-}
 
 .product-list {
 
@@ -48,6 +43,16 @@ p {
 
 }
 
+@media only screen and (max-width: 720px) {
+    img {
+        width: 100%;
+    }
+
+    .modal {
+        padding-top: 0%;
+    }
+}
+
 @keyframes box {
     from {
         transform: scale(1.0, 1.0);
@@ -73,7 +78,7 @@ p {
     /* Stay in place */
     z-index: 1;
     /* Sit on top */
-    padding-top: 10%;
+    padding-top: 5%;
     /* Location of the box */
     left: 0;
     top: 0;
