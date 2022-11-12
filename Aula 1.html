@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="PT-br">
 
 <head>
     <meta charset="UTF-8">
@@ -10,39 +10,47 @@
 </head>
 
 <body id="grad1">
-    <div>
-        <h1>Exercícios lógica de programação</h1>
 
-        <div class="product-list">
-            <div class="product-list_card product-list_card:hover" onclick="enfrentarDragoes()">
-                <h2>Exercício 1 - Ele vai sobreviver?</h3>
-                    <p> Um herói está a caminho do castelo para completar sua missão. No entanto, ele foi informado de
-                        que o
-                        castelo
-                        está
-                        cercado por alguns dragões poderosos! Cada dragão precisa de 2 balas para ser derrotado, nosso
-                        herói
-                        não
-                        tem
-                        ideia de quantas balas ele deve carregar. Suponde que ele vai pegar um determinado número de
-                        balas e
-                        seguir
-                        em
-                        frente para lutar contra outro número específico de dragões, ele sobreviverá?</p>
-            </div>
+    <h1>Exercícios lógica de programação</h1>
 
-            <div class="container product-list_card product-list_card:hover" onclick="leitura()" ;>
-                <h2>Exercício 2 - A lista é crescente?</h3>
-                    <p>Dada um Array de números inteiros. Diga se o mesmo está em ordem crescente.</p>
-            </div>
+    <div class="product-list">
 
-            <div class="container product-list_card product-list_card:hover" onclick="" ;>
-                <h2>Exercício 3 - Projeto no Git</h3>
-                    <p>Passo 1 - Criar um projeto </p>
-                    <p>Passo 2 - Fazer 2 commits </p>
-                    <p>Passo 3 - Mostar o log </p>
-            </div>
+        <div class="product-list_card product-list_card:hover" onclick="enfrentarDragoes()">
+            <h2>Exercício 1 - Ele vai sobreviver?</h3>
+                <p> Um herói está a caminho do castelo para completar sua missão. No entanto, ele foi informado de
+                    que o
+                    castelo
+                    está
+                    cercado por alguns dragões poderosos! Cada dragão precisa de 2 balas para ser derrotado, nosso
+                    herói
+                    não
+                    tem
+                    ideia de quantas balas ele deve carregar. Suponde que ele vai pegar um determinado número de
+                    balas e
+                    seguir
+                    em
+                    frente para lutar contra outro número específico de dragões, ele sobreviverá?</p>
+        </div>
 
+        <div class="container product-list_card product-list_card:hover" onclick="leitura()" ;>
+            <h2>Exercício 2 - A lista é crescente?</h3>
+                <p>Dada um Array de números inteiros. Diga se o mesmo está em ordem crescente.</p>
+        </div>
+
+        <div class="container product-list_card product-list_card:hover" id="myBtn" onclick="showImage()" ;>
+            <h2>Exercício 3 - Projeto no Git</h3>
+                <p>Passo 1 - Criar um projeto </p>
+                <p>Passo 2 - Fazer 2 commits </p>
+                <p>Passo 3 - Mostar o log </p>
+        </div>
+
+    </div>
+
+    <div id="myModal" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <img src="/photo1668265923.jpeg" />
         </div>
     </div>
 
@@ -51,6 +59,8 @@
 <script>
 
     ///////////////////////////////////////////////////////////////////////////
+    ///////////////////////////////////////////////////////////////////////////
+
 
     function enfrentarDragoes() {
         let balas = prompt("Quantidade de balas: ");
@@ -64,7 +74,6 @@
     }
 
     ///////////////////////////////////////////////////////////////////////////
-
     ///////////////////////////////////////////////////////////////////////////
 
     function leitura() {
@@ -91,6 +100,37 @@
     }
 
     ///////////////////////////////////////////////////////////////////////////
+    ///////////////////////////////////////////////////////////////////////////
+
+    // Get the modal
+    var modal = document.getElementById("myModal");
+
+    // Get the button that opens the modal
+    var btn = document.getElementById("myBtn");
+
+    // Get the <span> element that closes the modal
+    var span = document.getElementsByClassName("close")[0];
+
+    // When the user clicks the button, open the modal 
+    btn.onclick = function () {
+        modal.style.display = "block";
+    }
+
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function () {
+        modal.style.display = "none";
+    }
+
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function (event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }
+
+    ///////////////////////////////////////////////////////////////////////////
+    ///////////////////////////////////////////////////////////////////////////
+
 </script>
 
 </html>
