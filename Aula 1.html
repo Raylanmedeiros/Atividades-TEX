@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aulas T.EX</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body id="grad1">
+    <div>
+        <h1>Exercícios lógica de programação</h1>
+
+        <div class="product-list">
+            <div class="product-list_card product-list_card:hover" onclick="enfrentarDragoes()">
+                <h2>Exercício 1 - Ele vai sobreviver?</h3>
+                    <p> Um herói está a caminho do castelo para completar sua missão. No entanto, ele foi informado de
+                        que o
+                        castelo
+                        está
+                        cercado por alguns dragões poderosos! Cada dragão precisa de 2 balas para ser derrotado, nosso
+                        herói
+                        não
+                        tem
+                        ideia de quantas balas ele deve carregar. Suponde que ele vai pegar um determinado número de
+                        balas e
+                        seguir
+                        em
+                        frente para lutar contra outro número específico de dragões, ele sobreviverá?</p>
+            </div>
+
+            <div class="container product-list_card product-list_card:hover" onclick="leitura()" ;>
+                <h2>Exercício 2 - A lista é crescente?</h3>
+                    <p>Dada um Array de números inteiros. Diga se o mesmo está em ordem crescente.</p>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+<script>
+
+    ///////////////////////////////////////////////////////////////////////////
+
+    function enfrentarDragoes() {
+        let balas = prompt("Quantidade de balas: ");
+        let dragoes = prompt("Quantidade de dragões");
+
+        if ((balas / 2) < dragoes) {
+            alert("O herói falha ao derrotar os dragões!");
+        } else {
+            alert("O herói derrota os dragões com sucesso!");
+        }
+    }
+
+    ///////////////////////////////////////////////////////////////////////////
+
+    ///////////////////////////////////////////////////////////////////////////
+
+    function leitura() {
+
+        let numeros = []
+        size = +prompt("Digite o tamanho do Array")
+
+
+        for (let i = 1; i <= size; i++) {
+            numeros.push(prompt("Digite o " + i + "° valor do array."))
+        }
+
+        for (let i = 0; i < numeros.length; i++) {
+            if (numeros[i] > numeros[i + 1]) {
+                var valida = 1;
+            }
+        }
+        if (valida == 1) {
+            alert("O array informado foi: " + numeros + "\nLogo não é crescente");
+        } else {
+            alert("O array informado foi: " + numeros + "\nLogo é crescente");
+
+        }
+    }
+
+    ///////////////////////////////////////////////////////////////////////////
+</script>
+
+</html>
