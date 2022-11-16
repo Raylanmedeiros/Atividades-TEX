@@ -43,13 +43,24 @@ p {
 
 }
 
-@media only screen and (max-width: 720px) {
+.git-logo{
+    position: absolute;
+    top: 2.5%;
+    left: 93.8%;
+}
+
+@media only screen and (max-width: 720px) {  
     img {
         width: 100%;
     }
 
     .modal {
         padding-top: 0%;
+    }
+    .git-logo{
+        width: 7%;
+        left: 89%;
+
     }
 }
 
