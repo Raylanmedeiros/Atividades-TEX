@@ -55,7 +55,6 @@ function leitura() {
 
 }
 
-
 // Modal desafio 3
 // Get the modal
 var modal = document.getElementById("myModal");
